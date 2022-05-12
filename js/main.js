@@ -13,13 +13,13 @@ const pass = document.getElementById("password");
 const telefono = document.getElementById("phone");
 
 
-//variables del formulario de login
+//boton enviar login
 const btnEnviarLogin = document.getElementById("bton-enviar-login");
 //variables del formulario de login
 const correoLogin = document.getElementById("correoLogin");
 const passLogin = document.getElementById("passwordLogin");
 
-//valido la url donde estou hubicado en este caso el pathname de la ruta
+//valido la url donde estoy hubicado en este caso el pathname de la ruta
 const pathname = window.location.pathname;
 const ruta = "/login-_registro/login.html";
 
@@ -30,9 +30,12 @@ const login = (event) => {
     axios.get(urlDb)
         .then(function (response) {
 
-            //ricardo@correo.com
-            //1234
-
+            //parametros con los que estoy validando el ingreso a mi sesion de login
+            /**
+             * *response.data['-N1pmI1OzHCG3FOPLEOY']
+             *    -N1pmI1OzHCG3FOPLEOY -> estructura clave valor
+             */
+            
             const correo2 = response.data['-N1pmI1OzHCG3FOPLEOY'].mail;
             const pass2 = response.data['-N1pmI1OzHCG3FOPLEOY'].password;
 
@@ -44,20 +47,16 @@ const login = (event) => {
                 correoLogin.value = "";
                 passLogin.value = "";
             }
-
         })
         .catch(function (error) {
-            // handle error
             console.log(error);
         })
-        .then(function () {
-            // always executed
-        });
 }
 
 //funcion registro
 const registro = (event) => {
-    event.preventDefault(); //cancela el evento inicial submit del formulario, evitando la recarga de la pagina
+    //cancela el evento inicial submit del formulario, evitando la recarga de la pagina
+    event.preventDefault();
     
     if(nombreUser.value == "" && pass.value == "" && correo.value == ""){
         alert("faltan datos por ingresar");
@@ -73,7 +72,7 @@ const registro = (event) => {
           })
           .then(function (response){
             alert("datos ingresados");
-            console.log(response);
+            window.location = "http://localhost:8000/login-_registro/login.html";
           })
           .catch(function (error){
             alert("los datos estan mal", error);

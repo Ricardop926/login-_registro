@@ -28,7 +28,7 @@ const login = (event) => {
     event.preventDefault();
 
     axios.get(urlDb)
-        .then(function (response) {
+        .then(function (response){
 
             //parametros con los que estoy validando el ingreso a mi sesion de login
             /**

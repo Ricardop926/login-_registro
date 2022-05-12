@@ -4,13 +4,18 @@
 Para este proyecto se implemento la libreria Axios
 con esta libreria se hizo la conexion directa con la API para ejecutar parametros GET y POST
 
+## Datos de prueba
 
+```bash
+    * correo: ricardo@correo.com
+    * pass: 1234
+```
+    
 ## Servidor local
 [liveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 
 ```txt
     localhost:5500/login-_registro/
 ```
-
 
 ## Tecnologias
 
@@ -28,3 +33,4 @@ con esta libreria se hizo la conexion directa con la API para ejecutar parametro
 
 - Ricardo Andres Porras
 - Daniel Arango Villegas
+

@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h4 
+{
+    margin-bottom: 30px;
+}
+
+.registro
+{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.campo { 
+    width: 100%;
+    margin-bottom: 20px; /* separa hacia abajo los espacio de rellenar**/
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: white; /*este permite que el color de la letra de los campos se ponga del color que se predetermina*/
+}
+
+.boton
+{
+    width: 50%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px 12px;
+    color: white;
+    border-radius: 4px;
+    margin-left : 25%;
+}
+.boton:hover {
+    cursor: pointer;
+    color: white; 
+    background: #000;
+}

@@ -49,3 +49,111 @@ h4
     color: white; 
     background: #000;
 }
+
+/* home */
+:root 
+{
+    --fuente-principal: 'Quicksand', sans-serif;
+}
+/*-----------globales--------*/
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto ;
+    margin-top: 80px; 
+}
+h1,h2,h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #172A3A;
+    font-family: var(--fuente-principal);
+}
+
+
+/*---------header----------*/
+.header {
+    padding: 100px;
+    background-color:  #172A3A;
+   
+
+    
+}
+.logo
+{
+   text-align: center;
+   color: white;
+   font-family: 'PT Sans', sans-serif;
+   font-weight: 100;
+   font-size: 60px;
+ 
+}
+.logo__bold {
+    font-weight: 800;
+}
+
+/*navegacion*/
+.navegacion-principal 
+{
+    background-color: #1f53c5;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: var(--fuente-principal);
+    font-weight: bolder;
+    padding: 10px;
+   
+}
+.servicios {
+   display: grid; 
+    grid-template-columns: repeat(3, 1fr); /*es o mismo que poner 33.3% tres veces para este caso se uso el repeat porque es siminilarcada división de las colomnas, pero si dueran medidas diferentes, se utilizaría 1fr 1fr 1fr o las fracciones que se necesiten **/
+}
+
+.servicio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio .iconos 
+{
+    height: 150px;
+    width: 150px;
+    background-color: #1f53c5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* estas es la sombra que esta de bajo de los servicios*/
+.sombra
+{ 
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+/* footer*/
+    .footer, p 
+{
+         text-align: center;
+        color: #172A3A;
+        margin-top: 50px;
+}
+   
+   
+      
+
+
+    
